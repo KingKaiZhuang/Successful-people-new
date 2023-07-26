@@ -1,11 +1,13 @@
 section {
     padding-block: 25px;
 }
+
 #introduce {
     width: 100%;
     height: 125px;
     background-color: #464646;
 }
+
 #introduce .title h1 {
     text-align: center;
     font-size: 1.8rem;
@@ -20,15 +22,23 @@ section {
     font-size: 1.2rem;
 }
 
+#content .company-title h2 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+#content 
+
 @media (min-width: 768px) {
     #introduce {
         height: 180px;
     }
+
     #introduce .title h1 {
         font-size: 3rem;
         letter-spacing: 10px;
     }
-    
+
     #introduce .title h2 {
         margin-top: 30px;
         font-size: 1.5rem;
