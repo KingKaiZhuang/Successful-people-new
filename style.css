@@ -27,8 +27,6 @@ section {
     letter-spacing: 10px;
 }
 
-#content 
-
 @media (min-width: 768px) {
     #introduce {
         height: 180px;
