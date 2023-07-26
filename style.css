@@ -1,0 +1,36 @@
+section {
+    padding-block: 25px;
+}
+#introduce {
+    width: 100%;
+    height: 125px;
+    background-color: #464646;
+}
+#introduce .title h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    color: var(--blue);
+}
+
+#introduce .title h2 {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    #introduce {
+        height: 180px;
+    }
+    #introduce .title h1 {
+        font-size: 3rem;
+        letter-spacing: 10px;
+    }
+    
+    #introduce .title h2 {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+}
