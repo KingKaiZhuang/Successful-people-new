@@ -24,14 +24,14 @@ for (toggle of toggles) {
     };
 }
 
-window.onresize = e => {
-    let windowWidth = window.innerWidth;
-    let menu = document.querySelector('.menu-group');
-    if (windowWidth > 720) {
-        menu.style.height = 'initial';
-        menu.style.overflow = 'initial';
-    } else {
-        menu.style.height = menu.scrollHeight + 'px';
-        menu.style.overflow = 'hidden';
-    }
-}
+// window.onresize = e => {
+//     let windowWidth = window.innerWidth;
+//     let menu = document.querySelector('.menu-group');
+//     if (windowWidth > 720) {
+//         menu.style.height = 'initial';
+//         menu.style.overflow = 'initial';
+//     } else {
+//         menu.style.height = menu.scrollHeight + 'px';
+//         menu.style.overflow = 'hidden';
+//     }
+// }
