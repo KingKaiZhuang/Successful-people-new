@@ -61,7 +61,6 @@ section {
     letter-spacing: 5px;
     color: var(--blue);
 }
-
 #introduce .title h2 {
     margin-top: 15px;
     text-align: center;
@@ -69,9 +68,58 @@ section {
     font-size: 1.2rem;
 }
 
+#content {
+    background-image: linear-gradient(to top, #f0e1ff 0%, #d1e9ff 100%);
+    padding-bottom: 150px;
+}
+
+#content .company-title {
+    margin-block: 60px;
+}
 #content .company-title h2 {
-    font-size: 2rem;
-    letter-spacing: 10px;
+    font-size: 3rem;
+    letter-spacing: 15px;
+}
+#content .card {
+    box-shadow: 0 0 8px #515151;
+    border-radius: 12px;
+    transition: .3s;
+    margin: 15px 20px;
+    background-color: #ffffff;
+}
+#content .card:hover {
+    background-color: #758aff;
+    color: #fff;
+}
+#content .card-img {
+    padding: 6px;
+    overflow: hidden;
+}
+#content .card-img img {
+    border-radius: 10px;
+    transition: .5s;
+}
+#content .card-img img:hover {
+    transform: scale(1.2);
+
+}
+.card-text {
+    padding: 0 15px 15px;
+}
+.card-text h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-block: 5px;
+}
+.card-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-block: 5px;
+}
+.card-text p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 30px;
 }
 
 @media (min-width: 768px) {
