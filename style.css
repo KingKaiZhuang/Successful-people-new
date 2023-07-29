@@ -86,10 +86,21 @@ section {
     transition: .3s;
     margin: 15px 20px;
     background-color: #ffffff;
+    position: relative;
 }
 #content .card:hover {
     background-color: #758aff;
     color: #fff;
+}
+#content .mark {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    border: 2px solid #fff;
 }
 #content .card-img {
     padding: 6px;
@@ -97,11 +108,6 @@ section {
 }
 #content .card-img img {
     border-radius: 10px;
-    transition: .5s;
-}
-#content .card-img img:hover {
-    transform: scale(1.2);
-
 }
 .card-text {
     padding: 0 15px 15px;
