@@ -40,3 +40,9 @@
 .owl-theme .owl-dots .owl-dot.active {
 	background-color: rgb(255, 255, 255);
 }
+
+@media (max-width:768px) {
+    .owl-theme .owl-nav {
+        display: none;
+    }
+}
