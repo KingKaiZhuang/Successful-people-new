@@ -15,7 +15,7 @@
 }
 .owl-theme .owl-nav button.owl-prev {
     left: 20px;
-    background-image: url('/images/icons8-left-100.png');
+    background-image: url('images/icons8-left-100.png');
     background-position: left;
 }
 .owl-theme .owl-nav button.owl-next {
