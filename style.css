@@ -6,8 +6,7 @@
 /* Navbar */
 @media (max-width: 991px) {
     .offcanvas {
-        background-color: rgba(255, 255, 255, 0.574);
-        backdrop-filter: blur(1000px);
+        background-color: rgba(54, 54, 54, 0.7);
     }
     .offcanvas a {
         color: #fff;
