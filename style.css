@@ -1,12 +1,23 @@
-@media (max-width:520px) {
-    .section-title p {
-        font-size: 12px;
-    }
-}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+/* Navbar */
+@media (max-width: 991px) {
+    .offcanvas {
+        background-color: rgba(255, 255, 255, 0.333);
+        backdrop-filter: blur(10px);
+    }
+    .offcanvas a {
+        color: #fff;
+    }
+}
+/* Team */
+@media (max-width:520px) {
+    .section-title p {
+        font-size: 12px;
+    }
 }
 .team .member {
     position: relative;
