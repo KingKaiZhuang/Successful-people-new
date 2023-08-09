@@ -1,188 +1,103 @@
-nav {
-    width: 100%;
-    padding-block: 10px;
-    padding-inline: 5px;
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-    z-index: 10;
-    top: 0;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.team .member {
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background: #fff;
+}
+.team .member .teampic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+.team .member .member-info {
+    padding-left: 30px;
+}
+.team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: tomato;
+}
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+.team .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: black;
+    bottom: 0;
     left: 0;
 }
-nav a {
-    text-decoration: none;
-    color: initial;
+.team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
 }
-nav .nav-toggle {
-    display: block;
-    position: absolute;
-    font-size: 1.5rem;
-    right: 15px;
-    top: 15px;
+.team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-.logo {
-    padding-inline: 10px;
-    font-size: 1.5rem;
-}
-.menu-group {
+.team .member .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
     transition: .3s;
-    padding-inline: 10px;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
 }
-.menu-group a {
-    padding-block: 8px;
-    /* border-radius: 12px; */
+.team .member .social a i {
+    color: tomato;
+    font-size: 16px;
+    margin: 0 2px;
+    transition: .3s;
 }
-.menu-left {
-    display: flex;
-    flex-direction: column;
+.team .member .social a:hover {
+    background: tomato;
 }
-.menu-right {
-    display: flex;
-    flex-direction: column;
+.team .member .social a:hover i {
+    color: white;
 }
-
+.team .member .social a+a {
+    margin-left: 8px;
+}
 section {
-    padding-block: 25px;
+    padding-block: 60px;
+    overflow: hidden;
 }
-
-#introduce {
-    width: 100%;
-    height: 125px;
-    background-color: #464646;
-}
-
-#introduce .title h1 {
+.section-title {
     text-align: center;
-    font-size: 1.8rem;
-    letter-spacing: 5px;
-    color: var(--blue);
+    padding-bottom: 30px;
 }
-#introduce .title h2 {
-    margin-top: 15px;
-    text-align: center;
-    color: var(--white);
-    font-size: 1.2rem;
+.underline {
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+    margin-top: -30px;
 }
-
-#content {
-    background-image: linear-gradient(to top, #f0e1ff 0%, #d1e9ff 100%);
-    padding-bottom: 150px;
-}
-
-#content .company-title {
-    margin-block: 60px;
-}
-#content .company-title h2 {
-    font-size: 3rem;
-    letter-spacing: 15px;
-}
-#content .card {
-    box-shadow: 0 0 8px #515151;
-    border-radius: 12px;
-    transition: .3s;
-    margin: 15px 20px;
-    background-color: #ffffff;
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: relative;
+    color: tomato;
 }
-#content .card:hover {
-    background-color: #758aff;
-    color: #fff;
-}
-#content .mark {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: -25px;
-    right: -25px;
-    border: 2px solid #fff;
-}
-#content .card-img {
-    padding: 6px;
-    overflow: hidden;
-}
-#content .card-img img {
-    border-radius: 10px;
-}
-.card-text {
-    padding: 0 15px 15px;
-}
-.card-text h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-block: 5px;
-}
-.card-text h3 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-block: 5px;
-}
-.card-text p {
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 30px;
-}
-
-@media (min-width: 768px) {
-    nav {
-        display: flex;
-        background-image: linear-gradient(180deg, #ffffff 70%, #d1acff 100%);    position: fixed;
-
-    }
-    nav a {
-        margin-inline: 12px;
-    }
-    nav .nav-toggle {
-        display: none;
-    }
-    .logo {
-        padding-inline: initial;
-        font-size: 1.5rem;
-    }
-    .menu-group {
-        
-        height: initial;
-        padding-inline: initial;
-        margin-top: initial;
-        align-items: center;
-        flex-direction: initial;
-    }
-    .menu-group a {
-        display: inline-block;
-        height: 100%;
-        padding: 8px 12px;
-        transition: .3s;
-        border-radius: 12px;
-    }
-    .menu-group a:hover {
-        background-color: rgb(0, 162, 255);
-        color: #fff;
-    }
-    .menu-left {
-        margin-left: auto;
-        flex-direction: initial;
-    }
-    .menu-right {
-        margin-left: auto;
-        flex-direction: initial;
-    }
-    #introduce {
-        height: 180px;
-        margin-top: 52.2px;
-    }
-
-    #introduce .title h1 {
-        font-size: 3rem;
-        letter-spacing: 10px;
-    }
-
-    #introduce .title h2 {
-        margin-top: 30px;
-        font-size: 1.5rem;
-    }
+.section-title p {
+    margin-top: 20px;
 }
