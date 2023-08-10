@@ -148,7 +148,8 @@ section {
 }
 .services-card {
     position: relative;
-    height: 400px;
+    width: 300px;
+    height: 320px;
     border-radius: 12px;
 }
 .services-card span {
@@ -196,4 +197,20 @@ section {
 .services-card:nth-child(3)::before,
 .services-card:nth-child(3)::after{
     background-image: linear-gradient(45deg, #d4fc79 0%, #cffffd 100%);
+}
+.services-img {
+    position: absolute;
+    z-index: 3;
+}
+.services-text {
+    position: absolute;
+    top: 230px;
+    z-index: 4;
+    text-align: center;
+}
+.services-text h2 {
+    font-size: 25px;
+}
+.services-text h3 {
+    font-size: 15px;
 }
