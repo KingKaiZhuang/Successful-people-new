@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+section {
+    overflow: hidden;
+}
 /* Navbar */
 @media (max-width: 991px) {
     .offcanvas {
@@ -12,7 +15,23 @@
         color: #fff;
     }
 }
+/* Carousel */
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.carousel-inner h5 {
+    font-size: 2rem;
+}
+.carousel-inner p {
+    font-size: 1.2rem;
+}
 /* Team */
+.team {
+    padding-block: 60px;
+}
 @media (max-width:520px) {
     .section-title p {
         font-size: 12px;
@@ -90,10 +109,6 @@
 }
 .team .member .social a+a {
     margin-left: 8px;
-}
-section {
-    padding-block: 60px;
-    overflow: hidden;
 }
 .section-title {
     text-align: center;
