@@ -18,6 +18,12 @@ section {
     }
 }
 /* Carousel */
+@media(min-width:1200px){
+    .carousel-item img {
+        vertical-align: center;
+        height: 700px;
+    }
+}
 .carousel-indicators [data-bs-target] {
     width: 10px;
     height: 10px;
@@ -26,9 +32,11 @@ section {
 }
 .carousel-inner h5 {
     font-size: 2rem;
+    color: #3b3b3b;
 }
 .carousel-inner p {
     font-size: 1.2rem;
+    color: #3b3b3b;
 }
 /* About Us */
 .about-img {
